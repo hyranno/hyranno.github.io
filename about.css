@@ -1,0 +1,23 @@
+body{
+	line-height: 150%;
+}
+.box{
+	width:80%;
+	margin: 10px auto;
+	padding:10px 20px;
+	border-style: solid;
+	border-color: #aaaaaa;
+	border-width: 0px 1px 1px 0px;
+	line-height: 150%;
+}
+.genre{
+	font-size: 20px;
+	margin: 0px 0px 10px 0px;
+	width: 100%;
+}
+.lang{
+	display:inline-block;
+}
+.hist{
+	margin: 0px 20px 10px 20px;
+}

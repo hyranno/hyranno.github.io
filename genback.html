@@ -1,0 +1,49 @@
+<link href='http://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="genback.css" type="text/css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="genback.js"></script>
+<script type="text/javascript">
+function render(){
+	var c=[];
+	c[0]=$("#c0").val();
+	c[1]=$("#c1").val();
+	var r=$("#r").val();
+	var w=$("#w").val();
+	var h=$("#h").val();
+	$("#dot").css("height",w*h).css("background-image", "url("+dot(c,r,w)+")");
+	$("#doth").css("height",w*h).css("background-image", "url("+dot(c,r,w,h)+")");
+	$("#line").css("height",w*h).css("background-image", "url("+line(1,c,r,w)+")");
+	$("#lineh").css("height",w*h).css("background-image", "url("+line(1,c,r,w,h)+")");
+	$("#liner").css("height",w*h).css("background-image", "url("+line(-1,c,r,w)+")");
+	$("#linehr").css("height",w*h).css("background-image", "url("+line(-1,c,r,w,h)+")");
+	$("#noise").css("height",w*h).css("background-image", "url("+noise(c,r,w)+")");
+}
+
+$(function(){
+	$("input").on("change",function(){render();});
+	$("a").click(function(){
+		$(this).attr("href", $(this).css("background-image").slice(4,-1) );
+		//open($(this).css("background-image").slice(4,-1));
+	}).attr("download","back");
+	render();
+});
+
+</script>
+
+<h>GenBack</h><br>
+pay no more time to generate dots or stripes, please.<br>
+color<input type="text" id="c0" value="rgba(0,0,0,1)">
+gradient to<input type="text" id="c1" value="rgba(0,0,0,0)">
+r<input type="number" id="r" value="2">
+w<input type="number" id="w" value="10">
+h<input type="number" id="h" value="4">
+<br>
+click to download<br>
+<a id="dot"></a>
+<a id="doth" class="h"></a>
+<a id="line"></a>
+<a id="lineh" class="h"></a>
+<a id="liner"></a>
+<a id="linehr" class="h"></a>
+<a id="noise"></a>
+

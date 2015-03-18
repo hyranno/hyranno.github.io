@@ -1,0 +1,35 @@
+.genre{
+	font-size:25px;
+	margin: 30px auto 10px;
+	width: 80%;
+}
+.item{
+	border: solid #aaaaaa;
+	border-width: 0px 2px 2px 0px;
+	margin: 20px auto;
+	width: 80%;
+}
+.item div,
+.item .link{
+	display:block;
+	padding: 5px;
+	border: solid #bbbbbb;
+	border-width: 0px 5px 3px 0px;
+}
+.item .link:hover{
+	background-color: #9DCEF8;
+	border-color: #197278;
+}
+.item .name{
+	border-color:#c44536;
+	font-weight:bold;
+}
+.item .tech{
+	background-color: #eeeeee;
+}
+.item a{
+}
+.item .desc{
+	line-height: 150%;
+	height: auto;
+}

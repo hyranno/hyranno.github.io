@@ -1,0 +1,32 @@
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="index.css" type="text/css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+function initRadioButton(name){
+	$("[radiogroup="+name+"]").click(function(){
+		$("[radiogroup="+ name +"]").removeClass("selected");
+		$(this).addClass("selected");
+	});
+}
+$(function(){
+	initRadioButton("menu");
+	$("a[radiogroup=menu]:first").click();
+});
+	</script>
+</head>
+
+<body>
+
+<div id="menu">
+	<div class="logo">hyranno/portfolio</div>
+	<a href="products.html" target="con" radiogroup="menu">Products</a>
+	<a href="about.html" target="con" radiogroup="menu">About</a>
+	<a href="" target="_blank">GitHub</a>
+</div>
+
+<iframe name="con" src="products.html"></iframe>
+
+</body>
+</html>

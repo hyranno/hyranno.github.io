@@ -1,0 +1,14 @@
+html,body{
+	margin:0px;
+	width:100%;
+	background-color: #272932;/*image*/
+}
+
+#disp{
+	padding: 50px 50px 100px 50px;
+	background-color: #ffffff;
+	width: 70%;
+	margin: 0px auto;
+}
+
+

@@ -1,0 +1,71 @@
+<html>
+<head>
+	<link rel="stylesheet" href="common.css" type="text/css">
+	<link rel="stylesheet" href="about.css" type="text/css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="genback.js"></script>
+	<script type="text/javascript">
+$(function(){
+	$("body").css("background-image", "url("+dot(["rgba(0,0,0,1)"],2,10)+")");
+	$("#disp").css("background-image", "url("+line(1,["rgba(0,0,0,1)","rgba(0,0,0,0)"],1,3,20)+")").css("background-repeat", "repeat-x");
+});
+	</script>
+</head>
+<body>
+<div id="disp">
+
+<div class="box">
+	<div class="genre">whois</div>
+	<div class="intro">
+こんにちは。hyrannoです。2016年3月卒の予定で就活中です。<br>
+今は修士課程で神経工学関連の研究をしていますが、
+高専で電子透かし(画像処理)を研究していた期間の方が長く、こちらの方が馴染みがあります。<br>
+どうぞよろしくお願いします！
+	</div>
+</div>
+
+<div class="box">
+	<div class="genre">使うもの</div>
+	<div class="lang">JavaScript</div>
+	<div class="lang">HTML</div>
+	<div class="lang">PHP</div>
+	<div class="lang">C++</div>
+	<div class="lang">Java</div>
+	<div class="lang">Octave</div>
+</div>
+
+<div class="box">
+	<div class="genre">△資格△</div>
+	<div class="cert">応用情報処理技術者</div>
+	<div class="cert">情報セキュリティスペシャリスト</div>
+</div>
+
+<div class="box">
+	<div class="genre">略歴</div>
+	<div class="when">小学校</div>
+	<div class="hist">
+		高学年ごろ、HTMLを触り始める。運動は水泳。
+	</div>
+	<div class="when">中学校</div>
+	<div class="hist">
+		JavaScriptを触り始める。ゲームを作ろうとして途中で投げ出す。<br>
+		陸上部(長距離走)所属。
+	</div>
+	<div class="when">高専</div>
+	<div class="hist">
+		C++,Java,PHPを使い始める。学校のプログラミング課題で必要以上に凝ったものを作る。<br>
+		何回かゲームを作ろうとして途中で投げ出す。陸上部(長距離走)所属。
+	</div>
+	<div class="when">専攻科</div>
+	<div class="hist">
+		またゲームを作ろうとしだす。合気道を始める。
+	</div>
+	<div class="when">大学院</div>
+	<div class="hist">
+		コードを書くアルバイトを始める。新しい研究室の忙しさに怯む。
+	</div>
+</div>
+
+</div>
+</body>
+</html>
