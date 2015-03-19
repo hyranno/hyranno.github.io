@@ -21,11 +21,10 @@ $(function(){
 	<div class="tech">JavaScript,PHP,MySQL,Smarty,YoutubeAPI</div>
 	<a class="link" href="http://localbeat.mytheater.jp/smarttv/" target="_blank">http://localbeat.mytheater.jp/smarttv/</a>
 	<div class="desc">
-		アルバイトで書いた、音楽SNS。
-		バグ取りと機能追加が仕事だったが、書き直した方が早そうだったのでサーバ、クライアント全て書き直した。
-		2015/03/17現在、イベント情報まわり以外はほぼ自分が書いた物が走っているはず。
-		CSSの一部と画像は先方のもの。
-		Android機"光box"での動作を想定しており、WebView部分は先方持ち。
+		アルバイトで書いた、音楽SNSです。
+		バグ取りと機能追加が仕事でしたが、書き直した方が早そうだったので(だいぶ無理のあるコードでした)、サーバ、クライアントほぼ全て書き直しました。
+		2015/03/17現在、イベント情報まわり以外はほぼ自分が書いた物が走っているはずです。
+		webアプリですがAndroid機"光box"での動作を想定しており、WebView部分は先方が書いています。
 	</div>
 </div>
 
@@ -34,30 +33,30 @@ $(function(){
 	<div class="tech">JavaScript,YoutubeAPI</div>
 	<a class="link" href="http://katuos.localbeat.mytheater.jp/smarttv/" target="_blank">http://katuos.localbeat.mytheater.jp/smarttv/</a>
 	<div class="desc">
-		アルバイトで書いた、音楽SNS。
-		JavaScriptから先方が用意したAPIを叩くクライアントにしてほしいとのことで、クライアントを書き直し。
-		先方のPHPも少し編集。
-		本番環境に上げていないので、リンク先は開発中のもので、多少バグがある。
+		上記LocalBeatですが、クライアントをJavaScriptから先方が用意したAPI(PHP)を叩く形にしてほしいとのことで、クライアントを書き直しました。
+		先方のPHPも少し編集しています。
+		本番環境に上げていないので、リンク先は開発中のもので、多少バグが残っていると思います。
 	</div>
 </div>
 
 <div class="item">
 	<div class="name">はめ込み合成</div>
 	<div class="tech">JavaScript,HTML5</div>
-	<a class="link" href="synth.html" target="_blank">synth.html</a>
+	<a class="link" href="http://jsdo.it/hyranno/hTga" target="_blank">http://jsdo.it/hyranno/hTga</a>
 	<div class="desc">
-		ポートフォリオ用に3日で書いた、動画へのカメラ入力の合成。
-		カメラ側がダイナミックレンジを変更したりすると対応できない。
-		画像処理用の諸々を<a href="" target="_blank">portfolib</a>にまとめる。
+		制作期間3日。動画へのカメラ入力の合成です。
+		これを作りながら書いた画像処理用の諸々を<a href="https://github.com/hyranno/portofolib" target="_blank">portfolib</a>にまとめました。
+		動作中にカメラ側がダイナミックレンジを変更したりすると対応できない等の課題はあります。
 	</div>
 </div>
 
 <div class="item">
 	<div class="name">画像処理各種</div>
 	<div class="tech">JavaScript,HTML5</div>
-	<a class="link" href="imgdemo.html" target="_blank">imgdemo.html</a>
+	<a class="link" href="http://jsdo.it/hyranno/lUlt" target="_blank">http://jsdo.it/hyranno/lUlt</a>
 	<div class="desc">
-		<a href="" target="_blank">portfolib</a>による画像処理のデモ。
+		<a href="https://github.com/hyranno/portofolib" target="_blank">portfolib</a>による画像処理のデモです。
+		Gaussianフィルタ、Sobelフィルタ、輪郭強調、反転、絵画風、セピア調、輪郭抽出、輪郭とハーフトーン。
 	</div>
 </div>
 
@@ -66,9 +65,9 @@ $(function(){
 	<div class="tech">JavaScript,HTML5</div>
 	<a class="link" href="genback.html" target="_blank">genback.html</a>
 	<div class="desc">
-		よく使うドット柄やストライプ柄の画像を生成する。
-		JavaScript部分はこのポートフォリオサイトにも利用していて、背景は画像を読み込まずに生成してdataURLをcssに渡している。
-		PHPで同じ物を実装し、getで呼んで画像を返すようにしておけば、cssにもそのまま書けて便利になるかも知れない。
+		よく使うドット柄やストライプ柄の画像を生成します。
+		JavaScript部分はこのポートフォリオサイトにも利用していて、背景は画像を読み込まずに生成して、dataURLをcssに指定しています。
+		PHPでも実装して、getで呼んで画像と同じように扱えるようにしたいです。
 	</div>
 </div>
 
@@ -80,9 +79,9 @@ $(function(){
 	<div class="tech">JavaScript,HTML5</div>
 	<div class="desc">
 		学校の課題で作ったAM/FM/PMの変調シミュレータ。
-		FileAPIでwavを読み込んでCanvasに波形を表示する。
-		プレゼンもHTMLで行ったため、シームレスにデモに移行できた。
-		後に実教出版の教材に収録された。
+		FileAPIでwavを読み込んでCanvasに波形を表示するものでした。
+		プレゼンもHTMLで行ったため、シームレスにデモに移行できました。
+		後に実教出版の教材に収録されました。
 	</div>
 </div>
 
@@ -91,38 +90,7 @@ $(function(){
 	<div class="tech">Matlab</div>
 	<div class="desc">
 		5日間の研究室インターンで作ったパノラマ合成。
-		複数枚の写真や動画をつなげてパノラマ写真にできた。
-	</div>
-</div>
-
-
-
-<div class="genre">途中で中止しているもの</div>
-
-<div class="item">
-	<div class="name">自動作曲</div>
-	<div class="tech">Java,MIDI</div>
-	<div class="desc">
-		書き直したい。もっと出力のクオリティ向上が必要。
-	</div>
-</div>
-
-<div class="item">
-	<div class="name">電子透かしアプリ</div>
-	<div class="tech">JavaScript,Titanium</div>
-	<div class="desc">
-		すごく重いので中止。
-		WebView等で"ガワネイティヴ"にした方が扱いやすいかも知れないが、
-		パフォーマンスを考えるとフルにネイティヴにした方がいいのかも知れない。
-	</div>
-</div>
-
-<div class="item">
-	<div class="name">ゲーム</div>
-	<div class="tech">Java,C++,JavaScript,Flash,...</div>
-	<div class="desc">
-		RPGのマップシステム(Java,C++)、RPGの戦闘システム(JavaScript)、アクションゲーム(Flash)等、作りかけては放り出す。
-		簡単なものでも完成まで持っていきたい。
+		複数枚の写真や動画をつなげてパノラマ写真にできました。
 	</div>
 </div>
 
@@ -132,6 +100,13 @@ $(function(){
 	電子透かし(C++,OpenCV), 
 	ロボット制御(C++,i2c), 
 	信号処理(Octave)
+</div>
+
+<div class="genre">途中まで作ったもの</div>
+<div class="item">
+	自動作曲(Java,MIDI), 
+	電子透かしアプリ(JavaScript,Titanium), 
+	ゲーム(Java,C++,JavaScript,Flash,...)
 </div>
 
 </div>
